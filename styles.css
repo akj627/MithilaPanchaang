@@ -904,17 +904,19 @@ footer {
 
 .month-grid {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
     width: 100%;
+    padding: 10px;
 }
 
 .month-item {
-    padding: 0.5rem;
+    padding: 0.8rem;
     text-align: center;
     cursor: pointer;
     border-radius: 5px;
     transition: all 0.2s ease;
+    font-size: 0.95rem;
 }
 
 .month-item:hover {
@@ -929,46 +931,30 @@ footer {
 
 .year-selector {
     padding-top: 0.5rem;
-}
-
-.year-navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-}
-
-.year-nav-btn {
-    background: none;
-    border: none;
-    color: #3498db;
-    cursor: pointer;
-    padding: 0.25rem 0.5rem;
-    font-size: 1rem;
-    transition: color 0.2s ease;
-}
-
-.year-nav-btn:hover {
-    color: #2980b9;
+    text-align: center;
 }
 
 #yearRange {
     font-weight: 500;
     color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
 }
 
 .year-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;
+    padding: 0.5rem;
 }
 
 .year-item {
-    padding: 0.5rem;
+    padding: 0.8rem;
     text-align: center;
     cursor: pointer;
     border-radius: 5px;
     transition: all 0.2s ease;
+    font-size: 0.95rem;
 }
 
 .year-item:hover {
@@ -982,21 +968,15 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .date-selector-dropdown {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        max-width: 300px;
-    }
-
-    .month-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .year-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+        padding: 8px;
+    }
+
+    .year-item {
+        padding: 0.6rem;
+        font-size: 0.9rem;
     }
 }
 

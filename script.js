@@ -108,9 +108,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Populate year grid with current decade
     function populateYearGrid() {
         yearGrid.innerHTML = '';
-        yearRange.textContent = `${currentYearRange.start}-${currentYearRange.end}`;
+        yearRange.textContent = '2020 - 2026';
 
-        for (let year = currentYearRange.start; year <= currentYearRange.end; year++) {
+        for (let year = 2020; year <= 2026; year++) {
             const yearItem = document.createElement('div');
             yearItem.className = 'year-item';
             yearItem.textContent = year;
@@ -271,19 +271,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 updateCalendar();
                 closeDateSelector();
             });
-        });
-
-        // Year navigation
-        prevYearBtn.addEventListener('click', () => {
-            currentYearRange.start -= 10;
-            currentYearRange.end -= 10;
-            populateYearGrid();
-        });
-
-        nextYearBtn.addEventListener('click', () => {
-            currentYearRange.start += 10;
-            currentYearRange.end += 10;
-            populateYearGrid();
         });
 
         // View buttons
@@ -523,6 +510,76 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         calendarBody.appendChild(dayContainer);
+    }
+
+    function createMonthGrid() {
+        const monthGrid = document.createElement('div');
+        monthGrid.className = 'month-grid';
+        
+        const months = [
+            'January', 'February', 'March',
+            'April', 'May', 'June',
+            'July', 'August', 'September',
+            'October', 'November', 'December'
+        ];
+        
+        months.forEach(month => {
+            const monthItem = document.createElement('div');
+            monthItem.className = 'month-item';
+            monthItem.textContent = month;
+            monthItem.addEventListener('click', () => {
+                const monthIndex = months.indexOf(month);
+                currentDate.setMonth(monthIndex);
+                updateCalendar();
+                dateSelectorDropdown.classList.remove('active');
+            });
+            monthGrid.appendChild(monthItem);
+        });
+        
+        return monthGrid;
+    }
+
+    function createYearGrid() {
+        const yearGrid = document.createElement('div');
+        yearGrid.className = 'year-grid';
+        
+        const startYear = 2020;
+        const endYear = 2026;
+        
+        for (let year = startYear; year <= endYear; year++) {
+            const yearItem = document.createElement('div');
+            yearItem.className = 'year-item';
+            yearItem.textContent = year;
+            yearItem.addEventListener('click', () => {
+                currentDate.setFullYear(year);
+                updateCalendar();
+                dateSelectorDropdown.classList.remove('active');
+            });
+            yearGrid.appendChild(yearItem);
+        }
+        
+        return yearGrid;
+    }
+
+    // Update the year navigation buttons to use the fixed range
+    function updateYearRange() {
+        const yearRange = document.getElementById('yearRange');
+        if (yearRange) {
+            yearRange.textContent = '2020 - 2026';
+        }
+    }
+
+    // Remove the year navigation buttons since we have a fixed range
+    function createYearSelector() {
+        const yearSelector = document.createElement('div');
+        yearSelector.className = 'year-selector';
+        
+        const yearRange = document.createElement('div');
+        yearRange.id = 'yearRange';
+        yearRange.textContent = '2020 - 2026';
+        yearSelector.appendChild(yearRange);
+        
+        return yearSelector;
     }
 
     // Start loading panchang data
