@@ -65,6 +65,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let panchangData = null;
 
+    const occasionColors = {
+        "Mundan": "#FF6347", // Tomato
+        "Upanayan": "#6A5ACD", // SlateBlue
+        "Festival": "#3CB371", // MediumSeaGreen
+        "Default": "#FFA500" // Orange for any other occasion
+    };
+
     // Load panchang data
     async function loadPanchangData() {
         try {
@@ -340,15 +347,32 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let day = 1; day <= totalDays; day++) {
             const dayElement = document.createElement('div');
             dayElement.className = 'calendar-day';
-            dayElement.textContent = day;
             
-            // Check if the day is auspicious
-            if (checkAuspiciousDay(year, month, day)) {
-                dayElement.classList.add('auspicious');
-                const star = document.createElement('span');
-                star.className = 'auspicious-star';
-                star.textContent = '⭐';
-                dayElement.appendChild(star);
+            // Get day details
+            const dayData = getAuspiciousDayDetails(year, month, day);
+            const isAuspicious = checkAuspiciousDay(year, month, day);
+
+            const dateNum = document.createElement('div');
+            dateNum.classList.add('date-num');
+            dateNum.textContent = day;
+            dayElement.appendChild(dateNum);
+
+            if (isAuspicious) {
+                dayElement.classList.add('auspicious-day');
+
+                if (dayData && dayData.occasions && dayData.occasions.length > 0) {
+                    const numOccasions = dayData.occasions.length;
+                    const heightPerOccasion = 100 / numOccasions;
+
+                    dayData.occasions.forEach((occasion, index) => {
+                        const occasionBar = document.createElement('div');
+                        occasionBar.classList.add('occasion-bar');
+                        occasionBar.style.height = `${heightPerOccasion}%`;
+                        occasionBar.style.backgroundColor = occasionColors[occasion] || occasionColors['Default'];
+                        occasionBar.style.top = `${index * heightPerOccasion}%`;
+                        dayElement.appendChild(occasionBar);
+                    });
+                }
             }
             
             // Add click event to show details

@@ -9,6 +9,20 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: #333;
+    background-image: url('images/krishna--rada-madhubani-painting-12026.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto; /* Add margin to center and provide space */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Add a subtle shadow */
 }
 
 /* Header and Navigation */
@@ -330,17 +344,47 @@ section h2 {
 }
 
 .calendar-day {
-    background: white;
-    padding: 1rem;
-    min-height: 100px;
     position: relative;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.date-num {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.occasion-bar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.auspicious-day {
+    border: 2px solid #FFA500;
 }
 
 .calendar-day:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
 }
 
 .calendar-day.today {
@@ -860,11 +904,9 @@ footer {
 
 .month-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #eee;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    width: 100%;
 }
 
 .month-item {
@@ -1104,4 +1146,34 @@ footer {
 
 .list-link:hover {
     background-color: #2980b9;
+}
+
+.date-cell {
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+}
+
+.occasion-dots {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 2px;
+}
+
+.occasion-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+}
+
+.calendar-day.empty {
+    background-color: #f0f0f0;
+    border: 1px solid #eee;
 } 
