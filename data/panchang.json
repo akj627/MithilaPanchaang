@@ -1,0 +1,595 @@
+{
+    "auspiciousDays": {
+        "2025": {
+            "1": {
+                "3": {
+                    "tithi": "Magha Shukla",
+                    "nakshatra": "Uttara Phalguni",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "7": {
+                    "tithi": "Magha Shukla",
+                    "nakshatra": "Hasta",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                }
+            },
+            "2": {
+                "2": {
+                    "tithi": "Phalguna Shukla",
+                    "nakshatra": "Rohini",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "9": {
+                    "tithi": "Phalguna Shukla",
+                    "nakshatra": "Mrigashira",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony (Kṣepra Vaidhriti)"
+                        }
+                    ],
+                    "occasions": ["Upanayan", "Kṣepra Vaidhriti"]
+                },
+                "10": {
+                    "tithi": "Phalguna Shukla",
+                    "nakshatra": "Ardra",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                }
+            },
+            "3": {
+                "7": {
+                    "tithi": "Chaitra Shukla",
+                    "nakshatra": "Pushya",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "8": {
+                    "tithi": "Chaitra Shukla",
+                    "nakshatra": "Ashlesha",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan", "Chaitra Shukla"]
+                }
+            },
+            "4": {
+                "2": {
+                    "tithi": "Vaishakha Shukla",
+                    "nakshatra": "Uttara Phalguni",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "7": {
+                    "tithi": "Vaishakha Shukla",
+                    "nakshatra": "Swati",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "8": {
+                    "tithi": "Vaishakha Shukla",
+                    "nakshatra": "Vishakha",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "29": {
+                    "tithi": "Vaishakha Krishna",
+                    "nakshatra": "Revati",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                }
+            },
+            "5": {
+                "5": {
+                    "tithi": "Jyeshtha Shukla",
+                    "nakshatra": "Rohini",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "6": {
+                    "tithi": "Jyeshtha Shukla",
+                    "nakshatra": "Mrigashira",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                }
+            },
+            "10": {
+                "21": {
+                    "tithi": "Shukla Paksha Pratipada",
+                    "nakshatra": "Mrigashira",
+                    "muhurats": [
+                        {
+                            "name": "Mundan Muhurat",
+                            "time": "08:00 AM - 10:00 AM",
+                            "description": "Auspicious time for Mundan ceremony"
+                        }
+                    ],
+                    "occasions": ["Mundan"]
+                },
+                "27": {
+                    "tithi": "Shukla Paksha Saptami",
+                    "nakshatra": "Pushya",
+                    "muhurats": [
+                        {
+                            "name": "Mundan Muhurat",
+                            "time": "07:30 AM - 09:30 AM",
+                            "description": "Auspicious time for Mundan ceremony"
+                        }
+                    ],
+                    "occasions": ["Mundan"]
+                }
+            },
+            "11": {
+                "1": {
+                    "tithi": "Shukla Paksha Dwadashi",
+                    "nakshatra": "Uttara Phalguni",
+                    "muhurats": [
+                        {
+                            "name": "Mundan Muhurat",
+                            "time": "07:45 AM - 09:45 AM",
+                            "description": "Auspicious time for Mundan ceremony"
+                        }
+                    ],
+                    "occasions": ["Mundan"]
+                }
+            }
+        },
+        "2026": {
+            "0": {
+                "29": {
+                    "tithi": "Magha Shukla",
+                    "nakshatra": "Uttara Phalguni",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                }
+            },
+            "1": {
+                "22": {
+                    "tithi": "Phalguna Shukla",
+                    "nakshatra": "Rohini",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "26": {
+                    "tithi": "Phalguna Shukla",
+                    "nakshatra": "Mrigashira",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "27": {
+                    "tithi": "Phalguna Shukla",
+                    "nakshatra": "Ardra",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                }
+            },
+            "2": {
+                "27": {
+                    "tithi": "Chaitra Shukla",
+                    "nakshatra": "Pushya",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "29": {
+                    "tithi": "Chaitra Shukla",
+                    "nakshatra": "Ashlesha",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                }
+            },
+            "3": {
+                "21": {
+                    "tithi": "Vaishakha Shukla",
+                    "nakshatra": "Swati",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "27": {
+                    "tithi": "Vaishakha Shukla",
+                    "nakshatra": "Vishakha",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                }
+            },
+            "5": {
+                "17": {
+                    "tithi": "Jyeshtha Shukla",
+                    "nakshatra": "Rohini",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "19": {
+                    "tithi": "Jyeshtha Shukla",
+                    "nakshatra": "Mrigashira",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "24": {
+                    "tithi": "Jyeshtha Shukla",
+                    "nakshatra": "Pushya",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "25": {
+                    "tithi": "Jyeshtha Shukla",
+                    "nakshatra": "Ashlesha",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurta",
+                            "time": "06:00 AM - 12:00 PM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                }
+            },
+            "6": {
+                "1": {
+                    "tithi": "Shukla Paksha Shashthi",
+                    "nakshatra": "Uttara Phalguni",
+                    "muhurats": [
+                        {
+                            "name": "Mundan Muhurat",
+                            "time": "07:45 AM - 09:45 AM",
+                            "description": "Auspicious time for Mundan ceremony"
+                        }
+                    ],
+                    "occasions": ["Mundan"]
+                },
+                "2": {
+                    "tithi": "Shukla Paksha Saptami",
+                    "nakshatra": "Rohini",
+                    "muhurats": [
+                        {
+                            "name": "Mundan Muhurat",
+                            "time": "08:15 AM - 10:15 AM",
+                            "description": "Auspicious time for Mundan ceremony"
+                        }
+                    ],
+                    "occasions": ["Mundan"]
+                },
+                "3": {
+                    "tithi": "Shukla Paksha Ashtami",
+                    "nakshatra": "Mrigashira",
+                    "muhurats": [
+                        {
+                            "name": "Mundan Muhurat",
+                            "time": "08:00 AM - 10:00 AM",
+                            "description": "Auspicious time for Mundan ceremony"
+                        }
+                    ],
+                    "occasions": ["Mundan"]
+                },
+                "15": {
+                    "tithi": "Shukla Paksha Pratipada",
+                    "nakshatra": "Pushya",
+                    "muhurats": [
+                        {
+                            "name": "Mundan Muhurat",
+                            "time": "07:30 AM - 09:30 AM",
+                            "description": "Auspicious time for Mundan ceremony"
+                        }
+                    ],
+                    "occasions": ["Mundan"]
+                }
+            }
+        },
+        "2024": {
+            "0": {
+                "21": {
+                    "tithi": "Shukla Paksha Ekadashi",
+                    "nakshatra": "Rohini",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurat",
+                            "time": "07:00 AM - 09:00 AM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                }
+            },
+            "1": {
+                "19": {
+                    "tithi": "Krishna Paksha Trayodashi",
+                    "nakshatra": "Mrigashira",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurat",
+                            "time": "07:30 AM - 09:30 AM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "20": {
+                    "tithi": "Krishna Paksha Chaturdashi",
+                    "nakshatra": "Ardra",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurat",
+                            "time": "08:00 AM - 10:00 AM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                }
+            },
+            "2": {
+                "20": {
+                    "tithi": "Shukla Paksha Dashami",
+                    "nakshatra": "Swati",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurat",
+                            "time": "07:45 AM - 09:45 AM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "21": {
+                    "tithi": "Shukla Paksha Ekadashi",
+                    "nakshatra": "Vishakha",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurat",
+                            "time": "08:15 AM - 10:15 AM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                }
+            },
+            "3": {
+                "18": {
+                    "tithi": "Krishna Paksha Ashtami",
+                    "nakshatra": "Purva Phalguni",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurat",
+                            "time": "07:30 AM - 09:30 AM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "19": {
+                    "tithi": "Krishna Paksha Navami",
+                    "nakshatra": "Uttara Phalguni",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurat",
+                            "time": "08:00 AM - 10:00 AM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                }
+            },
+            "6": {
+                "8": {
+                    "tithi": "Shukla Paksha Dwitiya",
+                    "nakshatra": "Rohini",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurat",
+                            "time": "07:15 AM - 09:15 AM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                },
+                "10": {
+                    "tithi": "Shukla Paksha Chaturthi",
+                    "nakshatra": "Mrigashira",
+                    "muhurats": [
+                        {
+                            "name": "Upanayan Muhurat",
+                            "time": "07:45 AM - 09:45 AM",
+                            "description": "Auspicious time for Upanayan ceremony"
+                        }
+                    ],
+                    "occasions": ["Upanayan"]
+                }
+            }
+        }
+    },
+    "festivals": {
+        "2025": {
+            "1": {
+                "3": "Upanayan",
+                "7": "Upanayan"
+            },
+            "2": {
+                "2": "Upanayan",
+                "9": "Upanayan (Kṣepra Vaidhriti)",
+                "10": "Upanayan"
+            },
+            "3": {
+                "7": "Upanayan",
+                "8": "Upanayan (Chaitra Shukla)"
+            },
+            "4": {
+                "2": "Upanayan",
+                "7": "Upanayan",
+                "8": "Upanayan",
+                "29": "Upanayan"
+            },
+            "5": {
+                "5": "Upanayan",
+                "6": "Upanayan"
+            }
+        },
+        "2026": {
+            "0": {
+                "29": "Upanayan"
+            },
+            "1": {
+                "22": "Upanayan",
+                "26": "Upanayan",
+                "27": "Upanayan"
+            },
+            "2": {
+                "27": "Upanayan",
+                "29": "Upanayan"
+            },
+            "3": {
+                "21": "Upanayan",
+                "27": "Upanayan"
+            },
+            "5": {
+                "17": "Upanayan",
+                "19": "Upanayan",
+                "24": "Upanayan",
+                "25": "Upanayan"
+            },
+            "6": {
+                "1": "Upanayan",
+                "2": "Upanayan",
+                "3": "Upanayan",
+                "15": "Upanayan"
+            }
+        }
+    }
+} 

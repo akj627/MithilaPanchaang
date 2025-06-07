@@ -1,0 +1,1107 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-content {
+    color: white;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+/* Sections */
+section {
+    padding: 5rem 1rem;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+/* About Section */
+.about {
+    background-color: #f9f9f9;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Services Section */
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f9f9f9;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+#contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+#contact-form button {
+    padding: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Muhurat Calendar Section */
+.muhurat-calendar {
+    background-color: #fff;
+    padding: 2rem 1rem;
+}
+
+.calendar-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.calendar-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.month-selector {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.date-selectors {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.date-select {
+    padding: 0.5rem 1rem;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    background-color: white;
+    color: #2c3e50;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.date-select:hover {
+    border-color: #2980b9;
+}
+
+.date-select:focus {
+    outline: none;
+    border-color: #2980b9;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.nav-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #2980b9;
+}
+
+.view-options {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.view-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #3498db;
+    background: white;
+    color: #3498db;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-btn.active {
+    background: #3498db;
+    color: white;
+}
+
+.calendar-grid {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.calendar-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.calendar-body {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background: #eee;
+    transition: transform 0.3s ease-in-out;
+}
+
+.calendar-body.slide-left {
+    animation: slideLeft 0.3s ease-in-out;
+}
+
+.calendar-body.slide-right {
+    animation: slideRight 0.3s ease-in-out;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.calendar-day {
+    background: white;
+    padding: 1rem;
+    min-height: 100px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.calendar-day:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.calendar-day.today {
+    background: #e8f4f8;
+}
+
+.calendar-day.auspicious {
+    background-color: #fff3e0;
+    border: 2px solid #ff9800;
+    position: relative;
+}
+
+.calendar-day.auspicious:hover {
+    background-color: #ffe0b2;
+    transform: scale(1.05);
+}
+
+.auspicious-star {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 0.8em;
+    color: #ff9800;
+}
+
+.muhurat-item {
+    background-color: #fff3e0;
+    border: 1px solid #ff9800;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.muhurat-name {
+    font-weight: bold;
+    color: #ff9800;
+}
+
+.muhurat-time {
+    color: #666;
+    margin: 5px 0;
+}
+
+.muhurat-description {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.occasion-item {
+    background-color: #fff3e0;
+    border: 1px solid #ff9800;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 5px;
+    color: #ff9800;
+    font-weight: 500;
+}
+
+.calendar-day.auspicious::before {
+    content: '🌟';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 0.8rem;
+}
+
+.calendar-day.auspicious .date {
+    color: #e65100;
+    font-weight: 600;
+}
+
+.calendar-day.auspicious .muhurat-info {
+    color: #e65100;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    padding: 2px 4px;
+    background: rgba(255, 152, 0, 0.1);
+    border-radius: 4px;
+}
+
+.calendar-day .date {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.calendar-day .muhurat {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.muhurat-details {
+    margin-top: 2rem;
+}
+
+.timing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.timing-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.timing-card h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.timing-card .time {
+    color: #e74c3c;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.timing-card .description {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .calendar-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .month-selector {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .date-selectors {
+        justify-content: center;
+        margin: 0.5rem 0;
+    }
+    
+    .date-select {
+        min-width: 100px;
+    }
+    
+    .view-options {
+        justify-content: center;
+    }
+    
+    .calendar-day {
+        min-height: 80px;
+        padding: 0.5rem;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    section {
+        padding: 3rem 1rem;
+    }
+    
+    section h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Week View Styles */
+.week-header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.week-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.week-day {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.week-day:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.week-day .day-header {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.muhurat-time {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.muhurat-time .muhurat-name {
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+}
+
+.muhurat-time .muhurat-time-value {
+    color: #e74c3c;
+    font-size: 0.9rem;
+}
+
+/* Day View Styles */
+.day-header {
+    background: #2c3e50;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.day-date {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.day-schedule {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.muhurat-slot {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.muhurat-slot .muhurat-time {
+    color: #e74c3c;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.muhurat-slot .muhurat-name {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.muhurat-slot .muhurat-description {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments for week and day views */
+@media (max-width: 768px) {
+    .week-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .week-day {
+        margin-bottom: 1rem;
+    }
+
+    .day-header {
+        padding: 1rem;
+    }
+
+    .day-date {
+        font-size: 1.2rem;
+    }
+
+    .muhurat-slot {
+        padding: 1rem;
+    }
+}
+
+/* Clickable Date Styles */
+.calendar-day {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.calendar-day:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.week-day {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.week-day:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 0;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: #e74c3c;
+}
+
+.modal-header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.date-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tithi-info,
+.nakshatra-info,
+.muhurat-timings,
+.special-occasions {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.tithi-info h3,
+.nakshatra-info h3,
+.muhurat-timings h3,
+.special-occasions h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.muhurat-timings .muhurat-item {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.muhurat-timings .muhurat-item:last-child {
+    margin-bottom: 0;
+}
+
+.special-occasions .occasion-item {
+    margin-bottom: 0.8rem;
+    padding: 0.8rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.special-occasions .occasion-item:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        margin: 10% auto;
+        width: 95%;
+    }
+
+    .modal-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .date-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Date Selector Styles */
+.date-selector-container {
+    position: relative;
+    min-width: 200px;
+}
+
+.current-date-display {
+    padding: 0.5rem 1rem;
+    background: white;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.current-date-display:hover {
+    border-color: #2980b9;
+    background: #f8f9fa;
+}
+
+.date-selector-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    padding: 1rem;
+    margin-top: 0.5rem;
+    min-width: 300px;
+    z-index: 1000;
+}
+
+.date-selector-dropdown.active {
+    display: block;
+    animation: dropdownFadeIn 0.2s ease;
+}
+
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -10px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+.month-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.month-item {
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.month-item:hover {
+    background: #f0f7ff;
+    color: #3498db;
+}
+
+.month-item.active {
+    background: #3498db;
+    color: white;
+}
+
+.year-selector {
+    padding-top: 0.5rem;
+}
+
+.year-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.year-nav-btn {
+    background: none;
+    border: none;
+    color: #3498db;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.year-nav-btn:hover {
+    color: #2980b9;
+}
+
+#yearRange {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.year-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.year-item {
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.year-item:hover {
+    background: #f0f7ff;
+    color: #3498db;
+}
+
+.year-item.active {
+    background: #3498db;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .date-selector-dropdown {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .month-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .year-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Week View Styles */
+.calendar-day {
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    position: relative;
+}
+
+.date-number {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.muhurat-info {
+    font-size: 0.9em;
+    color: #ff9800;
+    margin-top: 5px;
+}
+
+/* Day View Styles */
+.day-view-container {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.day-view-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.tithi-nakshatra {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.tithi-nakshatra .tithi,
+.tithi-nakshatra .nakshatra {
+    font-size: 1.1em;
+    color: #666;
+    margin: 5px 0;
+}
+
+.muhurat-container,
+.occasions-container {
+    margin-top: 20px;
+}
+
+.muhurat-container h3,
+.occasions-container h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.muhurat-item {
+    background: #fff3e0;
+    border: 1px solid #ff9800;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.muhurat-name {
+    font-weight: bold;
+    color: #ff9800;
+    margin-bottom: 5px;
+}
+
+.muhurat-time {
+    color: #666;
+    margin: 5px 0;
+}
+
+.muhurat-description {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.occasion-item {
+    background: #fff3e0;
+    border: 1px solid #ff9800;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: #ff9800;
+    font-weight: 500;
+}
+
+.no-data-message {
+    text-align: center;
+    color: #666;
+    padding: 20px;
+    font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .calendar-day {
+        min-height: 80px;
+        padding: 5px;
+    }
+
+    .day-view-container {
+        padding: 10px;
+    }
+
+    .day-view-header {
+        font-size: 1.2em;
+    }
+
+    .muhurat-item,
+    .occasion-item {
+        padding: 10px;
+    }
+}
+
+.view-selector button[data-view="week"],
+.view-selector button[data-view="day"] {
+    display: none;
+}
+
+.header-links {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.list-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.list-link:hover {
+    background-color: #2980b9;
+} 

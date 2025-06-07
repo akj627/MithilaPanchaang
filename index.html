@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithila Panchang</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">Mithila Panchang</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- <section id="home" class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to Mithila Panchang</h1>
+                    <p>Your trusted source for traditional calendar and astrological services</p>
+                    <button class="cta-button">Get Started</button>
+                </div>
+            </section>
+
+            <section id="about" class="about">
+                <h2>About Us</h2>
+                <div class="about-content">
+                    <p>We provide accurate and reliable panchang services based on traditional Mithila astrology.</p>
+                </div>
+            </section>
+
+            <section id="services" class="services">
+                <h2>Our Services</h2>
+                <div class="service-cards">
+                    <div class="card">
+                        <h3>Daily Panchang</h3>
+                        <p>Get daily auspicious timings and important dates</p>
+                    </div>
+                    <div class="card">
+                        <h3>Horoscope</h3>
+                        <p>Personalized horoscope readings and predictions</p>
+                    </div>
+                    <div class="card">
+                        <h3>Muhurta</h3>
+                        <p>Find the most auspicious time for important events</p>
+                    </div>
+                </div>
+            </section> -->
+
+            <section id="muhurat-calendar" class="muhurat-calendar">
+                <h2></h2>
+                <div class="calendar-container">
+                    <div class="calendar-controls">
+                        <div class="month-selector">
+                            <button class="nav-btn" id="prevMonth">&lt;</button>
+                            <div class="date-selector-container">
+                                <div class="current-date-display" id="currentDateDisplay">September 2025</div>
+                                <div class="date-selector-dropdown" id="dateSelectorDropdown">
+                                    <div class="month-grid">
+                                        <div class="month-item" data-month="0">January</div>
+                                        <div class="month-item" data-month="1">February</div>
+                                        <div class="month-item" data-month="2">March</div>
+                                        <div class="month-item" data-month="3">April</div>
+                                        <div class="month-item" data-month="4">May</div>
+                                        <div class="month-item" data-month="5">June</div>
+                                        <div class="month-item" data-month="6">July</div>
+                                        <div class="month-item" data-month="7">August</div>
+                                        <div class="month-item" data-month="8">September</div>
+                                        <div class="month-item" data-month="9">October</div>
+                                        <div class="month-item" data-month="10">November</div>
+                                        <div class="month-item" data-month="11">December</div>
+                                    </div>
+                                    <div class="year-selector">
+                                        <div class="year-navigation">
+                                            <button class="year-nav-btn" id="prevYear">&lt;</button>
+                                            <span id="yearRange">2020-2029</span>
+                                            <button class="year-nav-btn" id="nextYear">&gt;</button>
+                                        </div>
+                                        <div class="year-grid" id="yearGrid">
+                                            <!-- Years will be populated by JavaScript -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="nav-btn" id="nextMonth">&gt;</button>
+                        </div>            
+<!--                         <div class="view-options">
+                            <button class="view-btn active" data-view="month">Month</button>
+                        </div>
+ -->                        <div class="header-links">
+                            <a href="panchang-list.html" class="list-link">View All Dates</a>
+                        </div>
+                    </div>
+                    
+                    <div class="calendar-grid">
+                        <div class="calendar-header">
+                            <div>Sunday</div>
+                            <div>Monday</div>
+                            <div>Tuesday</div>
+                            <div>Wednesday</div>
+                            <div>Thursday</div>
+                            <div>Friday</div>
+                            <div>Saturday</div>
+                        </div>
+                        <div class="calendar-body" id="calendarDays">
+                            <!-- Calendar days will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="muhurat-details">
+                        <h3>Today's Auspicious Timings</h3>
+                        <div class="timing-cards">
+                            <div class="timing-card">
+                                <h4>Brahma Muhurta</h4>
+                                <p class="time">04:30 AM - 05:30 AM</p>
+                                <p class="description">Best for spiritual activities and meditation</p>
+                            </div>
+                            <div class="timing-card">
+                                <h4>Abhijit Muhurta</h4>
+                                <p class="time">11:45 AM - 12:30 PM</p>
+                                <p class="description">Auspicious for all activities</p>
+                            </div>
+                            <div class="timing-card">
+                                <h4>Godhuli Kaal</h4>
+                                <p class="time">06:00 PM - 06:30 PM</p>
+                                <p class="description">Ideal for evening prayers and rituals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Mithila Panchang. All rights reserved.</p>
+        </footer>
+
+        <!-- Date Details Modal -->
+        <div id="dateModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-header">
+                    <h2 id="modalDate"></h2>
+                </div>
+                <div class="modal-body">
+                    <div class="date-details">
+                        <div class="tithi-info">
+                            <h3>Tithi</h3>
+                            <p id="modalTithi"></p>
+                        </div>
+                        <div class="nakshatra-info">
+                            <h3>Nakshatra</h3>
+                            <p id="modalNakshatra"></p>
+                        </div>
+                        <div class="muhurat-timings">
+                            <h3>Auspicious Timings</h3>
+                            <div id="modalMuhurats"></div>
+                        </div>
+                        <div class="special-occasions">
+                            <h3>Special Occasions</h3>
+                            <div id="modalOccasions"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
